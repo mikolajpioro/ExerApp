@@ -81,8 +81,23 @@ footer {
 }
 
 .dude_button {
+    height: 50px;
+    width: 50px;
     position: absolute;
-    padding: 10px 20px;
+    padding: 0;
     margin: 0;
     cursor: pointer;
+    border-radius: 50px;
+    background-color: rgb(204, 107, 138);
+    box-shadow: 2px 2px 5px black;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0); opacity: 0; }
+    80% { transform: scale(1.2); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.dude_button {
+    animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }

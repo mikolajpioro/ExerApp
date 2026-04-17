@@ -5,7 +5,6 @@ let score = 0
 
 function spawnDude() {
     const button = document.createElement('button');
-    button.innerText = "Catch Me!";
     button.className = "dude_button";
 
     const maxX = container.clientWidth - 100; 
