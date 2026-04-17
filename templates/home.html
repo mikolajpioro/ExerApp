@@ -2,7 +2,11 @@
 
 {% block content %}
     <div class="game_container">
-
     </div>
-    <button id="game_start"> Press to to start catching the dudes!!! </button>
+    <div class="button_layout">
+        <button id="game_start" class="game_buttons"> Press to start catching the dudes!!! </button>
+        <button id="game_stop" class="game_buttons"> Press to stop catching dudes!!! </button>
+    </div>
+
+    <script src="{{ url_for('static', path='script.js') }}"></script>
 {% endblock %}
