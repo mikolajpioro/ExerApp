@@ -9,4 +9,4 @@ templates = Jinja2Templates(directory='templates')
 
 @app.get('/', include_in_schema=False, name='home')
 def home_page(request: Request):
-    return templates.TemplateResponse("home.html", {"request": request, "title": "home"})
+    return templates.TemplateResponse("home.html", {"request": request, "title": "DUDE GAME!!!"})
