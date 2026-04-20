@@ -1,11 +1,19 @@
 const container = document.querySelector('.game_container');
 const startBtn = document.getElementById('game_start');
 const stopBtn = document.getElementById('game_stop');
+const images = ["static/dude1.png", "static/dude2.png", "static/dude3.png"]
 let score = 0
 
 function spawnDude() {
     const button = document.createElement('button');
     button.className = "dude_button";
+
+    const randomIndex = Math.floor(Math.random() * images.length);
+    const selectedImage = images[randomIndex];
+    
+    button.style.backgroundImage = `url('${selectedImage}')`;
+    button.style.backgroundSize = "cover";
+    button.style.backgroundPosition = "center";
 
     const maxX = container.clientWidth - 100; 
     const maxY = container.clientHeight - 40;
